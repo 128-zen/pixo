@@ -1963,6 +1963,7 @@ ul {
 
 .find-solution {
   padding-top: 120px;
+  background-color: $background_primary_color;
 }
 
 .find-solution__items {
