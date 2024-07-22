@@ -1284,6 +1284,7 @@ ul {
 
 .search {
   display: flex;
+  gap: 16px;
   position: relative;
   transition: border 0.12s ease-in-out;
 }
@@ -1447,12 +1448,12 @@ ul {
 
 .hero-inner {
   position: relative;
-  max-width: 570px;
+  max-width: 640px;
   width: 100%;
 }
 
 .hero .search, .error-page .search {
-  max-width: 570px;
+  max-width: 640px;
 }
 
 .hero .search input[type=search], .error-page .search input[type=search]{
@@ -1489,7 +1490,6 @@ ul {
 .popular-keywords {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
   margin-top: 30px;
@@ -1504,12 +1504,13 @@ ul {
   font-weight: 400;
   line-height: 140%;
   padding: 4px 8px;
-  border-radius: 8px;
-  background-color: $background_secondary_color;
+  border-radius: 50px;
+  background-color: $background_tertiary_color;
   color: $headings_primary;
 }
 
 .popular-keywords a:hover {
+  box-shadow: 2.25px 3.75px 0px 0px #000;
   background-color: $secondary_button_color;
   color: $headings_primary;
 }
@@ -2117,7 +2118,7 @@ ul {
   align-items: center;
 }
 .error-page .hero-inner {
-  max-width: 565px;
+  max-width: 640px;
   width: 100%;
 }
 .error-page h1 {
