@@ -1759,12 +1759,13 @@ ul {
   background-color: $background_primary_color;
 }
 
-.partners > div:first-of-type {
+.partners .container > div:first-of-type {
   text-align: center;
+  font-size: 13.5px;
   margin-bottom: 30px;
 }
 
-.partners > div:last-of-type {
+.partners .container > div:last-of-type {
   display: flex;
   align-items: center;
   justify-content: center;
