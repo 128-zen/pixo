@@ -1392,6 +1392,16 @@ ul {
   overflow: hidden;
   position: relative;
 }
+
+.hero .background {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: $background_primary_color;
+}
+
 .hero .container {
   display: flex;
   justify-content: center;
@@ -1401,8 +1411,6 @@ ul {
 .hero__content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   max-width: 900px;
   width: 100%;
   z-index: 3;
@@ -1413,59 +1421,19 @@ ul {
   max-width: 645px;
 }
 
-.hero > svg {
-  position: absolute;
-  left: 0;
-  bottom: 120px;
-}
-
-.hero > svg path:nth-of-type(1), .hero > svg:last-of-type path:nth-of-type(2) {
-  fill: $background_secondary_color;
-}
-
-.hero > svg path:nth-of-type(2), .hero > svg path:nth-of-type(3), .hero > svg:last-of-type path:nth-of-type(1) {
-  fill: $secondary_button_color;
-}
-
-.hero > svg path:nth-of-type(4), .hero > svg:last-of-type path:nth-of-type(3) {
-  fill: $background_primary_color;
-}
-
-.hero > svg g rect {
-  stroke: $headings_primary;
-}
-
-.hero > svg:last-child {
-  right: 0;
-  left: auto;
-}
-
 @media (max-width: 1279px) {
   .hero-text {
     font-size: 50px;
-  }
-  .hero > svg {
-    left: -70px;
-  }
-  .hero > svg:last-child {
-    right: -110px;
   }
 }
 @media (max-width: 1023px) {
   .hero .container {
     padding-top: 80px;
   }
-  .hero > svg {
-    left: -80px;
-    opacity: .5;
-  }
 }
 @media (max-width: 767px) {
   .hero .container {
     padding-top: 60px;
-  }
-  .hero > svg {
-    display: none;
   }
   .hero__content {
     max-width: 595px;
@@ -1488,33 +1456,30 @@ ul {
 }
 
 .hero .search input[type=search], .error-page .search input[type=search]{
-  border-radius: 6px;
+  border-radius: 50px;
   padding: 15px 150px 15px 50px;
   outline: none;
   color: $body_primary;
   background-color: $background_tertiary_color;
-  border: 1px solid rgba(166, 179, 228, 0.25);
+  border: 1px solid $border_color;
 }
 .hero .search input[type=submit], .error-page .search input[type=submit]{
-  position: absolute;
-  right: 0;
   padding: 8px 28px;
-  border-radius: 8px;
-  top: 50%;
-  transform: translate(-6px, -50%);
+  border-radius: 50px;
   font-size: 18px;
   font-weight: 400;
   line-height: 120%; /* 21.6px */
   letter-spacing: 0.63px;
   cursor: pointer;
   transition: all .3s ease;
+  box-shadow: 2.25px 3.75px 0px 0px #000;
   background-color: $primary_button_color;
   border: 1px solid $primary_button_color;
   color: $headings_primary;
 }
 .hero .search input[type=submit]:hover, .error-page .search input[type=submit]:hover {
-  background-color: $background_tertiary_color;
-  border: 1px solid $primary_button_color;
+  background-color: $secondary_button_color;
+  border: 1px solid $headings_primary;
   color: $headings_primary;
 }
 .hero .search-icon, .error-page .search-icon {
