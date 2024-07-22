@@ -1131,7 +1131,6 @@ ul {
 
 .footer__top p {
   max-width: 440px;
-  color: $headings_primary;
 }
 
 
@@ -1184,10 +1183,6 @@ ul {
 
 .footer__bottom a {
   font-size: 16px;
-}
-
-.footer__bottom p {
-  color: $headings_primary;
 }
 
 .footer__right a {
