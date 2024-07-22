@@ -1,7 +1,7 @@
 {
   "name": "Pixo 128",
   "author": "128zen",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -549,6 +549,120 @@
           "description": "Insert link",
           "label": "Item 3 Link",
           "value": "#"
+        }
+      ]
+    },
+    {
+      "label": "Homepage Videos Section",
+      "variables": [
+        {
+          "identifier": "show_videos",
+          "type": "checkbox",
+          "description": "Show section",
+          "label": "Toggle Section",
+          "value": true
+        },
+        {
+          "identifier": "videos_heading",
+          "type": "text",
+          "description": "Enter section heading",
+          "label": "Section Heading",
+          "value": "Popular videos"
+        },
+        {
+          "identifier": "videos_button",
+          "type": "text",
+          "description": "Enter text",
+          "label": "Section Button Text",
+          "value": "Watch More"
+        },
+        {
+          "identifier": "videos_button_link",
+          "type": "text",
+          "description": "Insert link",
+          "label": "Section Button Link",
+          "value": "#"
+        },
+        {
+          "identifier": "videos_img1",
+          "type": "file",
+          "description": "Choose image",
+          "label": "Item 1 Image"
+        },
+        {
+          "identifier": "videos_link1",
+          "type": "text",
+          "description": "Insert link",
+          "label": "Item 1 Link",
+          "value": "#"
+        },
+        {
+          "identifier": "videos_heading1",
+          "type": "text",
+          "description": "Enter heading",
+          "label": "Item 1 Heading",
+          "value": "Video tutorials"
+        },
+        {
+          "identifier": "videos_description1",
+          "type": "text",
+          "description": "Enter description",
+          "label": "Item 1 Description",
+          "value": "Comprehensive guides, tutorials, and references to help you navigate our products/services seamlessly."
+        },
+        {
+          "identifier": "videos_img2",
+          "type": "file",
+          "description": "Choose image",
+          "label": "Item 2 Image"
+        },
+        {
+          "identifier": "videos_link2",
+          "type": "text",
+          "description": "Insert link",
+          "label": "Item 2 Link",
+          "value": "#"
+        },
+        {
+          "identifier": "videos_heading2",
+          "type": "text",
+          "description": "Enter heading",
+          "label": "Item 2 Heading",
+          "value": "Video tutorials"
+        },
+        {
+          "identifier": "videos_description2",
+          "type": "text",
+          "description": "Enter description",
+          "label": "Item 2 Description",
+          "value": "Comprehensive guides, tutorials, and references to help you navigate our products/services seamlessly."
+        },
+        {
+          "identifier": "videos_img3",
+          "type": "file",
+          "description": "Choose image",
+          "label": "Item 3 Image"
+        },
+        {
+          "identifier": "videos_link3",
+          "type": "text",
+          "description": "Insert link",
+          "label": "Item 3 Link",
+          "value": "#"
+        },
+        {
+          "identifier": "videos_heading3",
+          "type": "text",
+          "description": "Enter heading",
+          "label": "Item 3 Heading",
+          "value": "Video tutorials"
+        },
+        {
+          "identifier": "videos_description3",
+          "type": "text",
+          "description": "Enter description",
+          "label": "Item 3 Description",
+          "value": "Comprehensive guides, tutorials, and references to help you navigate our products/services seamlessly."
         }
       ]
     },
