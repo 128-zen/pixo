@@ -674,7 +674,7 @@ ul {
 .header {
   position: relative;
   z-index: 99;
-  background-color: $background_primary_color;
+  background-color: transparent;
 }
 
 .header .container {
@@ -812,22 +812,6 @@ ul {
 
 .user-nav-list > li svg {
   cursor: pointer;
-}
-
-.user-nav-list .submit-a-request {
-  background-color: $primary_button_color;
-  border: 1px solid $headings_primary;
-  color: $headings_primary;
-}
-
-.user-nav-list .submit-a-request:hover {
-  background-color: $secondary_button_color;
-  border: 1px solid $secondary_button_color;
-  color: $headings_primary;
-}
-
-.user-nav-list .button-secondary:hover {
-  border: 1px solid $headings_primary;
 }
 
 @media (max-width: 768px) {
@@ -1098,34 +1082,14 @@ ul {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border-radius: 6px;
-  border: 1px solid $footer_border_color;
-  background-color: $background_secondary_color;
+  border-radius: 15px;
+  background-color: $background_primary_color;
+  box-shadow: 6px 6px 0px 0px #000;
 }
 
 .submit-request .container div, .submit-request h2, .submit-request p {
   position: relative;
   z-index: 4;
-}
-
-.submit-request svg {
-  position: absolute;
-  left: 0;
-  bottom: 30px;
-}
-
-.submit-request svg:last-child {
-  left: auto;
-  right: 0;
-  bottom: 20px;
-}
-
-.submit-request svg path {
-  fill: $background_tertiary_color;
-}
-
-.submit-request svg path:first-child {
-  fill: $secondary_button_color;
 }
 
 .submit-request h2 {
@@ -1151,13 +1115,10 @@ ul {
   .submit-request .container {
     padding: 40px;
   }
-  .submit-request svg {
-    display: none;
-  }
 }
 
 .footer {
-  background-color: $background_primary_color;
+  background-color: $background_tertiary_color;
 }
 
 .footer__top {
@@ -1218,7 +1179,7 @@ ul {
   align-items: center;
   max-width: 1170px;
   padding: 30px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid $border_color;
 }
 
 .footer__bottom a {
@@ -6542,7 +6503,7 @@ html[dir=rtl] .notification-left-aligned {
   display: inline-block;
   padding: 14px 34px;
   font-weight: 400;
-  border-radius: 6px;
+  border-radius: 50px;
 }
 
 .button-primary {
@@ -6554,14 +6515,14 @@ html[dir=rtl] .notification-left-aligned {
 
 .button-primary:hover {
   background-color: $secondary_button_color;
-  border: 1px solid $secondary_button_color;
+  border: 1px solid $headings_primary;
   color: $headings_primary;
 }
 
 .button-secondary {
   background-color: $secondary_button_color;
   color: $headings_primary;
-  border: 1px solid $secondary_button_color;
+  border: 1px solid $headings_primary;
   box-shadow: 2.25px 3.75px 0px 0px #000;
 }
 

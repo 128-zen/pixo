@@ -1,7 +1,7 @@
 {
   "name": "Pixo 128",
   "author": "128zen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -70,6 +70,13 @@
           "description": "Choose color for the hover state of the links",
           "label": "Hover Link Color",
           "value": "#FFB6D5"
+        },
+        {
+          "identifier": "border_color",
+          "type": "color",
+          "description": "Choose the color for borders",
+          "label": "Border Color",
+          "value": "#8D9AA6"
         }
       ]
     },
