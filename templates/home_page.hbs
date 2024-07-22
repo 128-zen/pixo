@@ -41,6 +41,37 @@
 </section>
 {{/if}}
 
+{{!-- Find Solution Section --}}
+{{#if settings.show_find_solution_section}}
+  <section class="find-solution section">
+    <div class="container">
+      <div class="find-solution__items">
+        <div class="find-solution__item fade-in-up">
+          <div>
+            <img src="{{settings.find_solution_item1_img}}" alt="item">
+          </div>
+          <h4><a href="{{settings.find_solution_item1_link}}">{{settings.find_solution_item1_heading}}</a></h4>
+          <p class="p-small">{{settings.find_solution_item1_text}}</p>
+        </div>
+        <div class="find-solution__item fade-in-up">
+          <div>
+            <img src="{{settings.find_solution_item2_img}}" alt="item">
+          </div>
+          <h4><a href="{{settings.find_solution_item2_link}}">{{settings.find_solution_item2_heading}}</a></h4>
+          <p class="p-small">{{settings.find_solution_item2_text}}</p>
+        </div>
+        <div class="find-solution__item fade-in-up">
+          <div>
+            <img src="{{settings.find_solution_item3_img}}" alt="item">
+          </div>
+          <h4><a href="{{settings.find_solution_item3_link}}">{{settings.find_solution_item3_heading}}</a></h4>
+          <p class="p-small">{{settings.find_solution_item3_text}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+{{/if}}
+
 {{#if settings.show_introduction}}
 {{!-- Introduction Section --}}
 <section class="introduction section">
@@ -132,38 +163,7 @@
   </div>
 </section>
 
-{{!-- Quick Links Section --}}
-{{#if settings.show_find_solution_section}}
-  <section class="find-solution section">
-    <div class="container">
-      <h2>{{settings.find_solution_heading}}</h2>
-      <p>{{settings.find_solution_subtitle}}</p>
-      <div class="find-solution__items">
-        <div class="find-solution__item fade-in-up">
-          <div>
-            <img src="{{settings.find_solution_item1_img}}" alt="item">
-          </div>
-          <h4><a href="{{settings.find_solution_item1_link}}">{{settings.find_solution_item1_heading}}</a></h4>
-          <p class="p-small">{{settings.find_solution_item1_text}}</p>
-        </div>
-        <div class="find-solution__item fade-in-up">
-          <div>
-            <img src="{{settings.find_solution_item2_img}}" alt="item">
-          </div>
-          <h4><a href="{{settings.find_solution_item2_link}}">{{settings.find_solution_item2_heading}}</a></h4>
-          <p class="p-small">{{settings.find_solution_item2_text}}</p>
-        </div>
-        <div class="find-solution__item fade-in-up">
-          <div>
-            <img src="{{settings.find_solution_item3_img}}" alt="item">
-          </div>
-          <h4><a href="{{settings.find_solution_item3_link}}">{{settings.find_solution_item3_heading}}</a></h4>
-          <p class="p-small">{{settings.find_solution_item3_text}}</p>
-        </div>
-      </div>
-    </div>
-  </section>
-{{/if}}
+
 
 
 

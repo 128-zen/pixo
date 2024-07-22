@@ -1965,23 +1965,6 @@ ul {
   padding-top: 120px;
 }
 
-.find-solution > svg {
-  position: absolute;
-  top: 50px;
-  right: 0;
-}
-
-.find-solution h2 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.find-solution .container > p {
-  text-align: center;
-  max-width: 550px;
-  margin: 0 auto;
-}
-
 .find-solution__items {
   display: flex;
   gap: 30px;
@@ -1994,11 +1977,12 @@ ul {
   display: flex;
   flex-direction: column;
   width: calc(33.3% - 20px);
-  padding: 30px;
+  padding: 40px;
   text-align: center;
   align-items: center;
-  border-radius: 6px;
-  background-color: $background_primary_color;
+  border-radius: 15px;
+  box-shadow: 6px 6px 0px 0px #000;
+  background-color: $background_tertiary_color;
 }
 
 .find-solution__item div, .categories__section > div:last-of-type div {
@@ -2006,11 +1990,7 @@ ul {
   border-radius: 50px;
   padding: 10px;
   margin-bottom: 20px;
-  background-color: $background_secondary_color;
-}
-
-.categories__section > div:last-of-type div {
-  margin-bottom: 0;
+  background-color: $headings_primary;
 }
 
 .find-solution__item a {
@@ -2019,10 +1999,6 @@ ul {
 
 .find-solution__item a:hover {
   color: $hover_link_color;
-}
-
-.find-solution__item p {
-  color: $find_solution_text_color;
 }
 
 .find-solution__item img {
@@ -2034,21 +2010,6 @@ ul {
   margin-top: 20px;
 }
 
-.find-solution__item > a {
-  font-size: 18px;
-  display: flex;
-  gap: 15px;
-  width: fit-content;
-  align-items: center;
-}
-
-.find-solution__item > a path {
-  stroke: $headings_primary;
-}
-
-.find-solution__item a:hover svg {
-  transform: rotate(45deg);
-}
 
 @media (max-width: 1279px) {
   .find-solution {
@@ -2077,9 +2038,6 @@ ul {
   .find-solution__item {
     width: 100%;
     max-width: 470px;
-  }
-  .find-solution > svg {
-    display: none;
   }
 }
 
