@@ -2031,6 +2031,7 @@ ul {
 /* VIDEOS */
 
 .videos {
+  padding-top: 120px;
   position: relative;
   text-align: center;
 }
@@ -2139,7 +2140,16 @@ ul {
   color: #fff;
 }
 
-@media (max-width: 1023px){
+@media (max-width: 1279px){
+  .videos {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .videos {
+    padding-top: 80px;
+  }
   .videos__head {
     flex-direction: column;
     gap: 20px;
@@ -2153,6 +2163,9 @@ ul {
 }
 
 @media (max-width: 767px){
+  .videos {
+    padding-top: 60px;
+  }
   .videos__item{
     width: 100%;
   }
