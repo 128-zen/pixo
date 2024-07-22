@@ -23,45 +23,63 @@
   <div class="background"></div>
 </section>
 
-{{#if settings.show_second_section}}
+{{#if settings.show_partners}}
+<section class="partners section">
+  <div class="container">
+    <div>
+      {{settings.partners_description}}
+    </div>
+    <div>
+      <img src="{{settings.partners_item1_img}}" alt="logo">
+      <img src="{{settings.partners_item2_img}}" alt="logo">
+      <img src="{{settings.partners_item3_img}}" alt="logo">
+      <img src="{{settings.partners_item4_img}}" alt="logo">
+      <img src="{{settings.partners_item5_img}}" alt="logo">
+      <img src="{{settings.partners_item6_img}}" alt="logo">
+    </div>
+  </div>
+</section>
+{{/if}}
+
+{{#if settings.show_introduction}}
 {{!-- Introduction Section --}}
 <section class="introduction section">
   <div class="container">
     <div class="introduction__items">
       <div class="introduction__item fade-in-up">
         <div>
-          <img src="{{settings.second_section_item1_img}}" alt="image">
+          <img src="{{settings.introduction_item1_img}}" alt="image">
         </div>
         <div>
-          <h5><a href="{{settings.second_section_item1_link}}">{{settings.second_section_item1_heading}}</a></h5>
-          <p>{{settings.second_section_item1_subtitle}}</p>
-        </div>
-      </div>
-      <div class="introduction__item fade-in-up">
-        <div>
-          <img src="{{settings.second_section_item2_img}}" alt="image">
-        </div>
-        <div>
-          <h5><a href="{{settings.second_section_item2_link}}">{{settings.second_section_item2_heading}}</a></h5>
-          <p>{{settings.second_section_item2_subtitle}}</p>
+          <h5><a href="{{settings.introduction_item1_link}}">{{settings.introduction_item1_heading}}</a></h5>
+          <p>{{settings.introduction_item1_subtitle}}</p>
         </div>
       </div>
       <div class="introduction__item fade-in-up">
         <div>
-          <img src="{{settings.second_section_item3_img}}" alt="image">
+          <img src="{{settings.introduction_item2_img}}" alt="image">
         </div>
         <div>
-          <h5><a href="{{settings.second_section_item3_link}}">{{settings.second_section_item3_heading}}</a></h5>
-          <p>{{settings.second_section_item3_subtitle}}</p>
+          <h5><a href="{{settings.introduction_item2_link}}">{{settings.introduction_item2_heading}}</a></h5>
+          <p>{{settings.introduction_item2_subtitle}}</p>
         </div>
       </div>
       <div class="introduction__item fade-in-up">
         <div>
-          <img src="{{settings.second_section_item4_img}}" alt="image">
+          <img src="{{settings.introduction_item3_img}}" alt="image">
         </div>
         <div>
-          <h5><a href="{{settings.second_section_item4_link}}">{{settings.second_section_item4_heading}}</a></h5>
-          <p>{{settings.second_section_item4_subtitle}}</p>
+          <h5><a href="{{settings.introduction_item3_link}}">{{settings.introduction_item3_heading}}</a></h5>
+          <p>{{settings.introduction_item3_subtitle}}</p>
+        </div>
+      </div>
+      <div class="introduction__item fade-in-up">
+        <div>
+          <img src="{{settings.introduction_item4_img}}" alt="image">
+        </div>
+        <div>
+          <h5><a href="{{settings.introduction_item4_link}}">{{settings.introduction_item4_heading}}</a></h5>
+          <p>{{settings.introduction_item4_subtitle}}</p>
         </div>
       </div>
     </div>
