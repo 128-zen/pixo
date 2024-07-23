@@ -78,7 +78,7 @@
   <div class="container">
     <div class="videos__head">
       <h2 class="fade-in-up">{{settings.videos_heading}}</h2>
-      <a class="button button-secondary" href="{{settings.videos_button_link}}" target="_blank">{{settings.videos_button}}</a>
+      <a class="button button-primary" href="{{settings.videos_button_link}}" target="_blank">{{settings.videos_button}}</a>
     </div>
     <div class="videos__list">
       <div class="videos__item fade-in-up">
@@ -216,8 +216,41 @@
   </div>
 </section>
 
-
-
-
-
-
+{{!-- FAQ Section --}}
+{{#if settings.show_faq}}
+<section class="faq section">
+  <div class="container">
+    <div class="faq__head fade-in-up">
+      <h3>{{settings.faq_heading}}</h3>
+      <p>{{settings.faq_subtitle}}</p>
+      <a class="button button-secondary" href="{{settings.faq_head_link}}">{{settings.faq_head_link_text}}</a>
+    </div>
+    <div class="faq__items">
+        <div class="faq__item open fade-in-up">
+          <h6>{{settings.faq_item1_heading}}</h6>
+          <p>{{settings.faq_item1_text}}</p>
+        </div>
+        <div class="faq__item fade-in-up">
+          <h6>{{settings.faq_item2_heading}}</h6>
+          <p>{{settings.faq_item2_text}}</p>
+        </div>
+        <div class="faq__item fade-in-up">
+          <h6>{{settings.faq_item3_heading}}</h6>
+          <p>{{settings.faq_item3_text}}</p>
+        </div>
+        {{#if settings.show_faq_item4}}
+        <div class="faq__item fade-in-up">
+          <h6>{{settings.faq_item4_heading}}</h6>
+          <p>{{settings.faq_item4_text}}</p>
+        </div>
+        {{/if}}
+        {{#if settings.show_faq_item5}}
+        <div class="faq__item fade-in-up">
+          <h6>{{settings.faq_item5_heading}}</h6>
+          <p>{{settings.faq_item5_text}}</p>
+        </div>
+        {{/if}}
+    </div>
+  </div>
+</section>
+{{/if}}

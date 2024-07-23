@@ -1,7 +1,7 @@
 {
   "name": "Pixo 128",
   "author": "128zen",
-  "version": "1.0.10",
+  "version": "1.0.12",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -663,6 +663,95 @@
           "description": "Enter description",
           "label": "Item 3 Description",
           "value": "Comprehensive guides, tutorials, and references to help you navigate our products/services seamlessly."
+        }
+      ]
+    },
+    {
+      "label": "Homepage FAQ Section",
+      "variables": [
+        {
+          "identifier": "show_faq",
+          "type": "checkbox",
+          "description": "Show section",
+          "label": "Toggle Section",
+          "value": true
+        },
+        {
+          "identifier": "faq_heading",
+          "type": "text",
+          "description": "Enter section heading",
+          "label": "Section Heading",
+          "value": "Frequently asked questions"
+        },
+        {
+          "identifier": "faq_subtitle",
+          "type": "text",
+          "description": "Enter text",
+          "label": "Section Subtitle",
+          "value": "Easily create documentation, knowledge-base, FAQ, forum and more"
+        },
+        {
+          "identifier": "faq_item1_heading",
+          "type": "text",
+          "description": "Enter question",
+          "label": "Item 1 Question",
+          "value": "Lorem ipsum dolor sit amet."
+        },
+        {
+          "identifier": "faq_item1_text",
+          "type": "text",
+          "description": "Enter answer",
+          "label": "Item 1 Answer",
+          "value": "Brief, we are responsible for the features that are advertised in the theme. So we will do the following: Solve bugs if there is any (bug means if any feature is not working as it should) If you have any question we will answer it."
+        },
+        {
+          "identifier": "faq_item2_heading",
+          "type": "text",
+          "description": "Enter question",
+          "label": "Item 2 Question",
+          "value": "Lorem ipsum dolor sit amet."
+        },
+        {
+          "identifier": "faq_item2_text",
+          "type": "text",
+          "description": "Enter answer",
+          "label": "Item 2 Answer",
+          "value": "Brief, we are responsible for the features that are advertised in the theme. So we will do the following: Solve bugs if there is any (bug means if any feature is not working as it should) If you have any question we will answer it."
+        },
+        {
+          "identifier": "faq_item3_heading",
+          "type": "text",
+          "description": "Enter question",
+          "label": "Item 3 Question",
+          "value": "Lorem ipsum dolor sit amet."
+        },
+        {
+          "identifier": "faq_item3_text",
+          "type": "text",
+          "description": "Enter answer",
+          "label": "Item 3 Answer",
+          "value": "Brief, we are responsible for the features that are advertised in the theme. So we will do the following: Solve bugs if there is any (bug means if any feature is not working as it should) If you have any question we will answer it."
+        },
+        {
+          "identifier": "show_faq_item4",
+          "type": "checkbox",
+          "description": "Show item",
+          "label": "Toggle Item 4",
+          "value": true
+        },
+        {
+          "identifier": "faq_item4_heading",
+          "type": "text",
+          "description": "Enter question",
+          "label": "Item 4 Question",
+          "value": "Lorem ipsum dolor sit amet."
+        },
+        {
+          "identifier": "faq_item4_text",
+          "type": "text",
+          "description": "Enter answer",
+          "label": "Item 4 Answer",
+          "value": "Brief, we are responsible for the features that are advertised in the theme. So we will do the following: Solve bugs if there is any (bug means if any feature is not working as it should) If you have any question we will answer it."
         }
       ]
     },

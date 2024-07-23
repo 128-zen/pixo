@@ -184,6 +184,21 @@
     }
   }
 
+  //switching FAQ items
+  const descriptionItems = document.querySelectorAll('.faq__item');
+  if(descriptionItems){
+    descriptionItems.forEach((item) => {
+      item.addEventListener('click', function() {
+        descriptionItems.forEach(descItem => {
+          if (descItem !== item) {
+              descItem.classList.remove('open');
+          }
+        });
+        this.classList.toggle('open')
+      })
+    })
+  }
+
   //Video, Extrat a video link from the image attribute
   let videoThumbnails = document.querySelectorAll('.videos__item');
 
