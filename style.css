@@ -1302,8 +1302,8 @@ ul {
   appearance: none;
   -webkit-appearance: none;
   box-sizing: border-box;
-  border: 1px solid rgba(166, 179, 228, 0.25);
-  background-color: $background_tertiary_color;
+  border: 1px solid $border_color;
+  background-color: $body_background_color;
   color: $body_primary;
   flex: 1 1 auto;
   font-size: 16px;
@@ -2679,7 +2679,7 @@ ul {
   background-color: $background_primary_color;
 }
 
-.category-page__article .meta-data {
+.category-page__article .meta-data, .section-page__article .meta-data {
   padding: 8px 10px;
   border-radius: 20px;
   color: $headings_primary;
@@ -2786,8 +2786,6 @@ ul {
   position: sticky;
   top: 94px;
   align-self: start;
-  border-radius: 8px;
-  background-color: $background_tertiary_color;
 }
 
 .nav .search-container {
@@ -2805,7 +2803,7 @@ ul {
 
 .nav input[type=search] {
   padding: 14px 20px 14px 50px;
-  border-radius: 6px;
+  border-radius: 30px;
 }
 
 .nav input[type=search]::placeholder {
@@ -2820,8 +2818,9 @@ ul {
 
 .nav__list, .nav__articles {
   padding: 20px 20px 30px;
-  border-radius: 6px;
-  border: 1px solid rgba(166, 179, 228, 0.25);
+  border-radius: 15px;
+  box-shadow: 6px 6px 0px 0px #000;
+  background-color: $background_secondary_color;
 }
 
 .nav__category {
@@ -2855,8 +2854,7 @@ ul {
   margin-top: 20px;
   flex-direction: column;
   align-items: start;
-  border-left: 1px solid $secondary_button_color;
-  background: $background_tertiary_color;
+  border-left: 1px solid $body_background_color;
 }
 
 .nav__sections.open {
@@ -2878,11 +2876,11 @@ ul {
 }
 
 .nav__sections a:hover {
-  color: $hover_link_color;
+  color: $background_tertiary_color;
 }
 
 .nav__sections a.active {
-  color: $hover_link_color;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -2930,7 +2928,8 @@ ul {
   width: 100%;
   height: 100%;
   padding: 30px;
-  border-radius: 6px;
+  border-radius: 15px;
+  box-shadow: 6px 6px 0px 0px #000;
   background-color: $background_tertiary_color;
 }
 
@@ -5010,8 +5009,8 @@ ul {
 }
 .requests-page .search input[type=search]{
   padding: 12px 50px;
-  border: 1px solid rgba(213, 218, 222, 0.8);
-  border-radius: 4px;
+  border: 1px solid $border_color;
+  border-radius: 30px;
 }
 .requests-page .search svg {
   left: 20px;
