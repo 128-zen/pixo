@@ -31,6 +31,19 @@
           {{#each section.articles}}
             <li class="fade-in-up">
               <div class="section-page__article">
+                <div>
+                  <div class="meta-group">
+                    {{#is created_at edited_at}}
+                      <p class="meta-data">{{date created_at timeago=true}}</p>
+                    {{else}}
+                      <p class="meta-data">{{date edited_at timeago=true}}</p>
+                    {{/is}}
+                  </div>
+                  <div>
+                    <p class="short-name">{{author.name}}</p>
+                    <img class="author-img" src="{{author.avatar_url}}">
+                  </div>
+                </div>
                 <h6><a href="{{url}}">{{title}}</a></h6>
                 <div>{{body}}</div>
                 <div>
