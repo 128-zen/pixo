@@ -2577,7 +2577,7 @@ ul {
 }
 
 .category-page__content {
-  padding-bottom: 360px;
+  padding-top: 120px;
 }
 
 .category-page__content>h2 {
@@ -2660,23 +2660,26 @@ ul {
 }
 
 .category-page__article > div:last-of-type div, .section-page__article > div:last-of-type div {
-  position: relative;
-}
-
-.category-page__article > div:last-of-type div, .category-page__article > div:last-of-type div img, .section-page__article > div:last-of-type div, .section-page__article > div:last-of-type div img {
   padding: 8px;
+  font-size: 0;
   border-radius: 50px;
+  box-shadow: 1.2px 2.4px 0px 0px #000;
   background-color: $primary_button_color;
 }
 
 .category-page__article > div:first-of-type > div:last-of-type, .section-page__article > div:first-of-type > div:last-of-type {
   display: flex;
+  align-items: center;
   gap: 10px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background-color: $background_primary_color;
 }
 
 .category-page__article .meta-data {
   padding: 8px 10px;
   border-radius: 20px;
+  color: $headings_primary;
   background-color: $primary_button_color;
 }
 
