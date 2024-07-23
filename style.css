@@ -1610,6 +1610,9 @@ ul {
   .sub-nav .breadcrumbs {
     margin-bottom: 0;
   }
+  .hero .search input[type=search], .error-page .search input[type=search] {
+    padding-right: 50px;
+  }
 }
 /***** Blocks *****/
 /* Used in Homepage#categories and Community#topics */
