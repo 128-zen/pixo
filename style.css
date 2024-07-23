@@ -2083,6 +2083,7 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+  box-shadow: 2.25px 3.75px 0px 0px #000;
 }
 
 .videos__item h4 {
@@ -2109,7 +2110,7 @@ ul {
 }
 
 .videos__img:hover rect{
-  fill: $primary_button_color;
+  fill: $secondary_button_color;
 }
 
 .videos__img:hover path{
