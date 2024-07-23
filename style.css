@@ -1459,7 +1459,7 @@ ul {
 
 .hero .search input[type=search], .error-page .search input[type=search]{
   border-radius: 50px;
-  padding: 15px 150px 15px 50px;
+  padding: 11px 150px 11px 50px;
   outline: none;
   color: $body_primary;
   background-color: $background_tertiary_color;
@@ -2235,6 +2235,8 @@ ul {
   justify-content: center;
   width: 30px;
   height: 30px;
+  border-radius: 50px;
+  box-shadow: 1.2px 2.4px 0px 0px #000;
   background-color: $primary_button_color;
 }
 
@@ -2550,6 +2552,10 @@ ul {
 }
 
 /***** Category pages *****/
+.category-page .hero .container {
+  background-color: $background_tertiary_color;
+}
+
 .category-page .hero .container {
   position: relative;
   z-index: 5;
