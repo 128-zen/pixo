@@ -2552,7 +2552,7 @@ ul {
 }
 
 /***** Category pages *****/
-.category-page .hero .container {
+.category-page .hero {
   background-color: $background_tertiary_color;
 }
 
@@ -2630,7 +2630,7 @@ ul {
   display: none;
 }
 
-.category-page__article > div:first-of-type, .section-page__article > div:first-of-type, .striped-list-item-body {
+.striped-list-item-body {
   max-height: 67px;
   overflow: hidden;
   margin: 20px 0 30px;
@@ -2639,7 +2639,7 @@ ul {
   line-height: 1.4;
 }
 
-.category-page__article > div:last-of-type, .section-page__article > div:last-of-type, .featured-posts-btn, .categories__section > div:last-of-type {
+.category-page__article > div:last-of-type, .section-page__article > div:last-of-type, .featured-posts-btn {
   position: relative;
   display: flex;
   gap: 15px;
@@ -2649,7 +2649,7 @@ ul {
   transition: all .3s ease;
 }
 
-.category-page__article > div:last-of-type a, .section-page__article > div:last-of-type a, .featured-posts-btn a, .categories__section > div:last-of-type a {
+.category-page__article > div:last-of-type a, .section-page__article > div:last-of-type a, .featured-posts-btn a {
   position: absolute;
   z-index: 1;
   left: 0;
@@ -2658,28 +2658,71 @@ ul {
   height: 100%;
 }
 
-.category-page__article > div:last-of-type svg path, .section-page__article > div:last-of-type svg path, .featured-posts-btn svg path, .categories__section div:last-of-type svg path {
+.category-page__article > div:last-of-type div, .section-page__article > div:last-of-type div {
+  position: relative;
+}
+
+.category-page__article > div:last-of-type div, .category-page__article > div:last-of-type div img, .section-page__article > div:last-of-type div, .section-page__article > div:last-of-type div img {
+  height: 24px;
+  width: 24px;
+}
+
+.category-page__article > div:last-of-type div svg, .section-page__article > div:last-of-type div svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.category-page__article > div:first-of-type > div:last-of-type, .section-page__article > div:first-of-type > div:last-of-type {
+  display: flex;
+  gap: 10px;
+}
+
+.category-page__article .short-name, .section-page__article .short-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: $headings_primary;
+}
+
+.category-page__article .author-img, .section-page__article .author-img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50px;
+}
+
+.category-page__article > div:first-of-type, .section-page__article > div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.category-page__article > div:nth-of-type(2), .section-page__article > div:nth-of-type(2) {
+  max-height: 68px;
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.category-page__article > div:last-of-type svg path, .section-page__article > div:last-of-type svg path {
   stroke: $headings_primary;
 }
 
-.category-page__article > div:last-of-type:hover svg, .section-page__article > div:last-of-type:hover svg, .featured-posts-btn:hover svg, .categories__section > div:last-of-type:hover svg {
-  transform: rotate(45deg);
-}
-
-.category-page__article > div:last-of-type div, .section-page__article > div:last-of-type div {
-  padding: 10px;
-  border-radius: 50px;
-  font-size: 0;
-  background-color: $background_tertiary_color;
+.category-page__article > div:last-of-type:hover svg, .section-page__article > div:last-of-type:hover svg, .featured-posts-btn:hover svg {
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 
 @media(max-width: 1279px) {
   .category-page__content {
-    padding-bottom: 340px;
+    padding-top: 100px;
   }
 }
 
 @media(max-width: 1023px) {
+  .category-page__content {
+    padding-top: 80px;
+  }
   .category-page__section-heading {
     margin-bottom: 40px;
   }
@@ -2694,7 +2737,7 @@ ul {
     width: calc(50% - 15px);
   }
   .category-page__content {
-    padding-bottom: 320px;
+    padding-top: 80px;
   }
 }
 
@@ -2703,7 +2746,7 @@ ul {
     margin-bottom: 40px;
   }
   .category-page__content {
-    padding-bottom: 300px;
+    padding-top: 60px;
     text-align: center;
   }
   .category-page__sections {
