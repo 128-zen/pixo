@@ -2181,7 +2181,7 @@ ul {
 
 .faq .container{
   display: flex;
-  gap: 50px;
+  gap: 40px;
 }
 
 .faq>h2{
@@ -2191,21 +2191,13 @@ ul {
 }
 
 .faq__head {
-  max-width: 250px;
+  max-width: 340px;
   display: flex;
   flex-direction: column;
 }
 
-.faq__head h3{
+.faq__head h2{
   margin-bottom: 30px;
-}
-
-.faq__head p{
-  margin-bottom: 50px;
-}
-
-.faq__head a {
-  width: fit-content;
 }
 
 .faq__items{
@@ -2225,26 +2217,33 @@ ul {
   margin-bottom: 0;
 }
 
-.faq__item h6::before{
-  content: '+';
-  position: absolute;
-  line-height: 1.1;
-  right: 0;
-  transition: transform 0.3s ease-in-out;
+.faq__item > div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.faq__item h6{
-  position: relative;
-  padding-right: 20px;
-}
 
-.faq__item.open h6{
+.faq__item.open div {
   margin-bottom: 20px;
 }
 
-.faq__item.open h6::before{
-  content: '-';
-  transform: rotate(180deg);
+.faq__item div div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: $primary_button_color;
+}
+
+.faq__item.open svg {
+  transform: rotate(90deg);
+}
+
+.faq__item svg path {
+  stroke: $headings_primary;
 }
 
 .faq__item p{
@@ -2264,7 +2263,7 @@ ul {
   opacity: 1;
 }
 
-@media (max-width: 10279px){
+@media (max-width: 1279px){
   .faq {
     padding-top: 100px;
   }
