@@ -1,7 +1,7 @@
 {
   "name": "Pixo 128",
   "author": "128zen",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -667,6 +667,127 @@
       ]
     },
     {
+      "label": "Homepage Introduction Section",
+      "variables": [
+        {
+          "identifier": "show_introduction_section",
+          "type": "checkbox",
+          "description": "Show section",
+          "label": "Toggle Section",
+          "value": true
+        },
+        {
+          "identifier": "introduction_heading",
+          "type": "text",
+          "description": "Enter section heading",
+          "label": "Section Heading",
+          "value": "What is Pixo used for"
+        },
+        {
+          "identifier": "introduction_item1_img",
+          "type": "file",
+          "description": "Insert image",
+          "label": "Item 1 Image"
+        },
+        {
+          "identifier": "introduction_item1_heading",
+          "type": "text",
+          "description": "Enter heading",
+          "label": "Item 1 Heading",
+          "value": "Grow with working capital"
+        },
+        {
+          "identifier": "introduction_item1_text",
+          "type": "text",
+          "description": "Enter text",
+          "label": "Item 1 Text",
+          "value": "Learn about our powerful theming framework, designed to create beautiful and unique."
+        },
+        {
+          "identifier": "introduction_item1_link_text",
+          "type": "text",
+          "description": "Enter text",
+          "label": "Item 1 Link Text",
+          "value": "Learn More"
+        },
+        {
+          "identifier": "introduction_item1_link",
+          "type": "text",
+          "description": "Insert link",
+          "label": "Item 1 Link",
+          "value": "#"
+        },
+        {
+          "identifier": "introduction_item2_img",
+          "type": "file",
+          "description": "Insert image",
+          "label": "Item 2 Image"
+        },
+        {
+          "identifier": "introduction_item2_heading",
+          "type": "text",
+          "description": "Enter heading",
+          "label": "Item 2 Heading",
+          "value": "Grow with working capital"
+        },
+        {
+          "identifier": "introduction_item2_text",
+          "type": "text",
+          "description": "Enter text",
+          "label": "Item 2 Text",
+          "value": "Learn about our powerful theming framework, designed to create beautiful and unique."
+        },
+        {
+          "identifier": "introduction_item2_link_text",
+          "type": "text",
+          "description": "Enter text",
+          "label": "Item 2 Link Text",
+          "value": "Learn More"
+        },
+        {
+          "identifier": "introduction_item2_link",
+          "type": "text",
+          "description": "Insert link",
+          "label": "Item 2 Link",
+          "value": "#"
+        },
+        {
+          "identifier": "introduction_item3_img",
+          "type": "file",
+          "description": "Insert image",
+          "label": "Item 3 Image"
+        },
+        {
+          "identifier": "introduction_item3_heading",
+          "type": "text",
+          "description": "Enter heading",
+          "label": "Item 3 Heading",
+          "value": "Grow with working capital"
+        },
+        {
+          "identifier": "introduction_item3_text",
+          "type": "text",
+          "description": "Enter text",
+          "label": "Item 3 Text",
+          "value": "Learn about our powerful theming framework, designed to create beautiful and unique."
+        },
+        {
+          "identifier": "introduction_item3_link_text",
+          "type": "text",
+          "description": "Enter text",
+          "label": "Item 3 Link Text",
+          "value": "Learn More"
+        },
+        {
+          "identifier": "introduction_item3_link",
+          "type": "text",
+          "description": "Insert link",
+          "label": "Item 3 Link",
+          "value": "#"
+        }
+      ]
+    },
+    {
       "label": "Homepage FAQ Section",
       "variables": [
         {
@@ -752,126 +873,6 @@
           "description": "Enter answer",
           "label": "Item 4 Answer",
           "value": "Brief, we are responsible for the features that are advertised in the theme. So we will do the following: Solve bugs if there is any (bug means if any feature is not working as it should) If you have any question we will answer it."
-        }
-      ]
-    },
-    {
-      "label": "Homepage Introduction Section",
-      "variables": [
-        {
-          "identifier": "show_introduction",
-          "type": "checkbox",
-          "description": "Show section",
-          "label": "Toggle Section",
-          "value": true
-        },
-        {
-          "identifier": "introduction_item1_img",
-          "type": "file",
-          "description": "Insert image",
-          "label": "Item 1 Image"
-        },
-        {
-          "identifier": "introduction_item1_heading",
-          "type": "text",
-          "description": "Enter section heading",
-          "label": "Item 1 Heading",
-          "value": "Video tutorials"
-        },
-        {
-          "identifier": "introduction_item1_link",
-          "type": "text",
-          "description": "Insert link",
-          "label": "Item 1 Link",
-          "value": "#"
-        },
-        {
-          "identifier": "introduction_item1_subtitle",
-          "type": "text",
-          "description": "Enter section subtitle",
-          "label": "Item 1 Subtitle",
-          "value": "Discover everything you need to know to start your journey"
-        },
-        {
-          "identifier": "introduction_item2_img",
-          "type": "file",
-          "description": "Insert image",
-          "label": "Item 2 Image"
-        },
-        {
-          "identifier": "introduction_item2_heading",
-          "type": "text",
-          "description": "Enter section heading",
-          "label": "Item 2 Heading",
-          "value": "Campaigns"
-        },
-        {
-          "identifier": "introduction_item2_link",
-          "type": "text",
-          "description": "Insert link",
-          "label": "Item 2 Link",
-          "value": "#"
-        },
-        {
-          "identifier": "introduction_item2_subtitle",
-          "type": "text",
-          "description": "Enter section subtitle",
-          "label": "Item 2 Subtitle",
-          "value": "Discover everything you need to know to start your journey"
-        },
-        {
-          "identifier": "introduction_item3_img",
-          "type": "file",
-          "description": "Insert image",
-          "label": "Item 3 Image"
-        },
-        {
-          "identifier": "introduction_item3_heading",
-          "type": "text",
-          "description": "Enter section heading",
-          "label": "Item 3 Heading",
-          "value": "Account settings"
-        },
-        {
-          "identifier": "introduction_item3_link",
-          "type": "text",
-          "description": "Insert link",
-          "label": "Item 3 Link",
-          "value": "#"
-        },
-        {
-          "identifier": "introduction_item3_subtitle",
-          "type": "text",
-          "description": "Enter section subtitle",
-          "label": "Item 3 Subtitle",
-          "value": "Discover everything you need to know to start your journey"
-        },
-        {
-          "identifier": "introduction_item4_img",
-          "type": "file",
-          "description": "Insert image",
-          "label": "Item 4 Image"
-        },
-        {
-          "identifier": "introduction_item4_heading",
-          "type": "text",
-          "description": "Enter section heading",
-          "label": "Item 4 Heading",
-          "value": "Features"
-        },
-        {
-          "identifier": "introduction_item4_link",
-          "type": "text",
-          "description": "Insert link",
-          "label": "Item 4 Link",
-          "value": "#"
-        },
-        {
-          "identifier": "introduction_item4_subtitle",
-          "type": "text",
-          "description": "Enter section subtitle",
-          "label": "Item 4 Subtitle",
-          "value": "Discover everything you need to know to start your journey"
         }
       ]
     },
