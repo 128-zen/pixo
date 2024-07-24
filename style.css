@@ -447,8 +447,8 @@ ul {
 }
 
 .comment-form-controls input[type=submit]:hover {
-  background-color: $background_tertiary_color;
-  border: 1px solid $primary_button_color;
+  background-color: $secondary_button_color;
+  border: 1px solid $headings_primary;
   color: $headings_primary;
 }
 
@@ -1574,7 +1574,8 @@ ul {
   border-radius: 50px;
   padding: 10px;
   font-size: 0;
-  background-color: $background_tertiary_color;
+  box-shadow: 1.2px 2.4px 0px 0px #000;
+  background-color: $background_secondary_color;
 }
 
 .page-header .dropdown-toggle:hover svg, .page-header .dropdown-toggle[aria-expanded='true'] svg {
@@ -2460,8 +2461,8 @@ ul {
   text-align: left;
   padding: 30px;
   width: calc(33.3% - 20px);
-  border-radius: 6px;
-  border: 1px solid rgba(166, 179, 228, 0.25);
+  border-radius: 15px;
+  box-shadow: 6px 6px 0px 0px #000;
   background-color: $background_tertiary_color;
   color: $headings_primary;
 }
@@ -2477,14 +2478,13 @@ ul {
   font-weight: 400;
   line-height: normal;
   padding: 5px 10px;
-  border: 1px solid rgba(166, 179, 228, 0.25);
+  background-color: $secondary_button_color;
   color: $headings_primary;
-  border-radius: 6px;
+  border-radius: 20px;
 }
 
 .recent-activity-item-parent:hover {
-  border: 1px solid $secondary_button_color;
-  background-color: $secondary_button_color;
+  background-color: $primary_button_color;
   color: $headings_primary;
 }
 
@@ -4049,9 +4049,10 @@ ul {
   gap: 30px;
 }
 .featured-posts-item {
-  border-radius: 6px;
+  border-radius: 15px;
   padding: 30px;
-  background: $background_secondary_color;
+  box-shadow: 6px 6px 0px 0px #000;
+  background: $background_tertiary_color;
   width: calc(33.3% - 20px);
 }
 .featured-posts-item a {
@@ -4186,9 +4187,10 @@ ul {
 
 .topic-header .dropdown-toggle, .my-activities-following-header .dropdown-toggle, .profile-section-sorter .dropdown-toggle {
   padding: 14px 20px;
-  border-radius: 8px;
+  border-radius: 30px;
   transition: all .3s ease;
-  border: 1px solid rgba(166, 179, 228, 0.25);
+  box-shadow: 2.25px 3.75px 0px 0px #000;
+  border: 1px solid $border_color;
   background-color: $background_tertiary_color;
 }
 
@@ -4244,8 +4246,8 @@ ul {
   text-align: left;
   padding: 30px;
   width: calc(33.3% - 20px);
-  border-radius: 6px;
-  border: 1px solid rgba(166, 179, 228, 0.25);
+  border-radius: 15px;
+  box-shadow: 6px 6px 0px 0px #000;
   background-color: $background_tertiary_color;
 } 
 
@@ -4300,7 +4302,7 @@ ul {
 }
 .post-list-page .posts {
   padding-top: 120px;
-  background-color: $background_secondary_color;
+  background-color: $background_primary_color;
 }
 
 @media (max-width: 1279px) {
@@ -6635,9 +6637,9 @@ html[dir=rtl] .notification-left-aligned {
 }
 
 .dropdown-menu {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05), 0px 4px 22px 0px rgba(0, 0, 0, 0.04);
+  background: #FEFBF6;
+  border-radius: 15px;
+  box-shadow: 2.25px 3.75px 0px 0px #000;
   display: none;
   font-size: 16px;
   font-style: normal;
