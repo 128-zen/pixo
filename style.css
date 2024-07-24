@@ -2872,7 +2872,6 @@ ul {
 .nav__sections a {
   display: inline;
   margin-bottom: 15px;
-  color: $body_primary;
 }
 
 .nav__sections a:hover {
@@ -2882,6 +2881,10 @@ ul {
 .nav__sections a.active {
   font-size: 18px;
   font-weight: 500;
+}
+
+.nav__sections a.active:hover {
+  color: $headings_primary;
 }
 
 .nav__sections a.active:hover {
