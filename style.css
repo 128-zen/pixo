@@ -4194,6 +4194,15 @@ ul {
   background-color: $background_tertiary_color;
 }
 
+.topic-header .dropdown-toggle:hover, .topic-header .dropdown-toggle[aria-expanded='true'], .my-activities-following-header .dropdown-toggle:hover, .my-activities-following-header .dropdown-toggle[aria-expanded='true'], .profile-section-sorter .dropdown-toggle:hover, .profile-section-sorter .dropdown-toggle[aria-expanded='true'] {
+  background-color: $primary_button_color;
+}
+
+.topic-header .dropdown-toggle:hover svg, .topic-header .dropdown-toggle[aria-expanded='true'] svg, .my-activities-following-header .dropdown-toggle:hover svg, .my-activities-following-header .dropdown-toggle[aria-expanded='true'] svg, .profile-section-sorter .dropdown-toggle:hover svg, .profile-section-sorter .dropdown-toggle[aria-expanded='true'] svg {
+  transform: rotate(180deg);
+}
+
+
 
 @media (min-width: 768px) {
   .topic-header .dropdown {
