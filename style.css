@@ -361,14 +361,13 @@ select::-ms-expand {
 }
 
 textarea {
-  border-radius: 6px;
+  border-radius: 15px;
   resize: vertical;
   width: 100%;
   outline: none;
   padding: 18px;
   height: 140px;
-  border: 1px solid rgba(166, 179, 228, 0.25);
-  background-color: $background_tertiary_color;
+  border: 1px solid $border_color;
 }
 
 .container {
@@ -3013,8 +3012,7 @@ ul {
   margin-top: 20px;
   flex-direction: column;
   align-items: start;
-  border-left: 1px solid $secondary_button_color;
-  background: $background_tertiary_color;
+  border-left: 1px solid $body_background_color;
 }
 
 .nav__articles li {
@@ -3026,12 +3024,11 @@ ul {
 }
 
 .nav__articles .current-article {
-  color: $hover_link_color;
   font-weight: 500;
 }
 
-.nav__articles .current-article:hover {
-  text-shadow: none;
+.nav__articles a:hover {
+  color: $background_tertiary_color;
 }
 
 .article-container {
@@ -3590,8 +3587,9 @@ ul {
 .comment {
   padding: 20px;
   margin-bottom: 30px;
-  border-radius: 6px;
-  border: 1px solid rgba(166, 179, 228, 0.25);
+  border-radius: 15px;
+  box-shadow: 6px 6px 0px 0px #000;
+  border: 1px solid $border_color;
   background-color: $background_tertiary_color;
 }
 .comment:last-of-type {
