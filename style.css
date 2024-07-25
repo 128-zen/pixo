@@ -5325,8 +5325,8 @@ ul {
   display: block;
 }
 .request-main .comment-show-container {
-  border-radius: 6px;
-  border: 1px solid #ddd;
+  border-radius: 15px;
+  border: 1px solid $border_color;
   color: $headings_primary;
   background-color: $background_tertiary_color;
   text-align: inherit;
