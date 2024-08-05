@@ -72,6 +72,25 @@
   </section>
 {{/if}}
 
+{{#if settings.show_categories_list}}
+  {{!-- Categories List Section --}}
+  <section class="categories-list section">
+    <div class="container">
+      <span>{{settings.categories_list_title}}</span>
+      <div class="categories-list__items">
+        {{#each categories}}
+          <div class="categories-list__item">
+            <div>
+              <a href="{{url}}">{{name}}</a>
+            </div>
+            <p>{{description}}</p>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+{{/if}}
+
 {{!-- Popular Videos Section --}}
 {{#if settings.show_videos}}
 <section class="videos section">

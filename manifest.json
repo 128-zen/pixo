@@ -1,7 +1,7 @@
 {
   "name": "Pixo 128",
   "author": "128zen",
-  "version": "1.0.39",
+  "version": "1.0.40",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -549,6 +549,25 @@
           "description": "Insert link",
           "label": "Item 3 Link",
           "value": "#"
+        }
+      ]
+    },
+    {
+      "label": "Homepage Categories List Section",
+      "variables": [
+        {
+          "identifier": "show_categories_list",
+          "type": "checkbox",
+          "description": "Show section",
+          "label": "Toggle Section",
+          "value": true
+        },
+        {
+          "identifier": "categories_list_title",
+          "type": "text",
+          "description": "Enter section title",
+          "label": "Section Title",
+          "value": "How it works in steps"
         }
       ]
     },
