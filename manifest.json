@@ -1,7 +1,7 @@
 {
   "name": "Pixo 128",
   "author": "128zen",
-  "version": "1.0.38",
+  "version": "1.0.39",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -44,10 +44,10 @@
           "value": "#FEFBF6"
         },
         {
-          "identifier": "headings_primary",
+          "identifier": "text_primary",
           "type": "color",
-          "description": "Choose heading primary color",
-          "label": "Heading Primary Color",
+          "description": "Choose text primary color",
+          "label": "Text Primary Color",
           "value": "#1E1E1E"
         },
         {
@@ -1014,13 +1014,6 @@
     {
       "label": "Footer",
       "variables": [
-        {
-          "identifier": "footer_border_color",
-          "type": "color",
-          "description": "Choose the color of the border of the top part of the footer",
-          "label": "Border Color",
-          "value": "#E2ECDF"
-        },
         {
           "identifier": "footer_heading",
           "type": "text",

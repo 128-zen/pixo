@@ -14,6 +14,11 @@
     return null;
   }
 
+  function getLanguageFromUrl(url) {
+    const match = url.match(/hc\/([^\/]+)/);
+    return match ? match[1] : null;
+  }
+
   //displaying Category List on the Section and Article Pages
   const url = window.location.href;
 
@@ -23,10 +28,11 @@
   }
 
   const domain = getDomainFromUrl(url);
+  const locale = getLanguageFromUrl(url);
 
   let categoriesAndSections = [];
-  const categoriesUrl = `https://${domain}/api/v2/help_center/categories.json`;
-  const sectionsUrl = `https://${domain}/api/v2/help_center/sections.json`;
+  const categoriesUrl = `https://${domain}/api/v2/help_center/${locale}/categories.json`;
+  const sectionsUrl = `https://${domain}/api/v2/help_center/${locale}/sections.json`;
   
   const contentContainer = document.querySelector('.nav__list');
   
