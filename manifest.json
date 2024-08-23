@@ -1,7 +1,7 @@
 {
   "name": "Pixo 128",
   "author": "128zen",
-  "version": "1.0.42",
+  "version": "1.0.43",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -892,6 +892,25 @@
           "description": "Enter answer",
           "label": "Item 4 Answer",
           "value": "Brief, we are responsible for the features that are advertised in the theme. So we will do the following: Solve bugs if there is any (bug means if any feature is not working as it should) If you have any question we will answer it."
+        }
+      ]
+    },
+    {
+      "label": "Homepage Category Section Layout",
+      "variables": [
+        {
+          "identifier": "show_category1_section",
+          "type": "checkbox",
+          "description": "Show category section layout 1",
+          "label": "Toggle Layout 1",
+          "value": true
+        },
+        {
+          "identifier": "show_category2_section",
+          "type": "checkbox",
+          "description": "Show category section layout 2",
+          "label": "Toggle Layout 2",
+          "value": true
         }
       ]
     },
