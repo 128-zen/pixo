@@ -280,6 +280,16 @@
     }
   });
 
+  document.addEventListener("DOMContentLoaded", function() {
+    const categories = document.querySelectorAll('.categories');
+    if (categories.length >= 2) {
+        const categoriesLayout2 = document.querySelector('.categories-layout2');
+        if (categoriesLayout2) {
+            categoriesLayout2.style.paddingTop = '0';
+        }
+    }
+  });
+
   //DEFAULT THEME CODE
 
   // Key map

@@ -1893,16 +1893,26 @@ ul {
   padding-top: 120px;
 }
 
-.categories-layout2 {
-  padding-top: 0!important;
-}
-
 .categories .container {
   display: flex;
   flex-direction: column;
   gap: 80px;
   position: relative;
   z-index: 1;
+}
+
+.categories-layout2 .container {
+  display: block;
+}
+
+.categories__header {
+  max-width: 645px;
+  text-align: center;
+  margin: 0 auto 60px;
+}
+
+.categories__header p {
+  margin-top: 20px;
 }
 
 .categories__head {
@@ -1999,6 +2009,9 @@ ul {
   .categories__sections {
     margin-top: 40px;
     justify-content: center;
+  }
+  .categories__header {
+    margin-bottom: 40px;
   }
   .categories__list {
     justify-content: center;

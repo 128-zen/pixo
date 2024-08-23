@@ -300,6 +300,14 @@
 {{!-- Categories Section --}}
 <section class="categories categories-layout2 section">
   <div class="container">
+    {{#if settings.show_category2_header}}
+      <div class="categories__header">
+        <h2>{{settings.category2_heading}}</h2>
+        {{#if settings.show_category2_subtitle}}
+          <p>{{settings.category2_subtitle}}</p>
+        {{/if}}
+      </div>
+    {{/if}}
     <div class="categories__list">
       {{#each categories}}
         <div class="categories__section fade-in-up">

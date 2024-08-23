@@ -1,7 +1,7 @@
 {
   "name": "Pixo 128",
   "author": "128zen",
-  "version": "1.0.43",
+  "version": "1.0.44",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -896,20 +896,48 @@
       ]
     },
     {
-      "label": "Homepage Category Section Layout",
+      "label": "Homepage Categories Section Layout",
       "variables": [
         {
           "identifier": "show_category1_section",
           "type": "checkbox",
-          "description": "Show category section layout 1",
+          "description": "Show categories section layout 1",
           "label": "Toggle Layout 1",
           "value": true
         },
         {
           "identifier": "show_category2_section",
           "type": "checkbox",
-          "description": "Show category section layout 2",
+          "description": "Show categories section layout 2",
           "label": "Toggle Layout 2",
+          "value": true
+        },
+        {
+          "identifier": "show_category2_header",
+          "type": "checkbox",
+          "description": "Show categories section layout 2 header",
+          "label": "Toggle Layout 2 Header",
+          "value": true
+        },
+        {
+          "identifier": "category2_heading",
+          "type": "text",
+          "description": "Enter section heading",
+          "label": "Section Heading",
+          "value": "Explore Our Categories"
+        },
+        {
+          "identifier": "category2_subtitle",
+          "type": "text",
+          "description": "Enter section subtitle",
+          "label": "Section Subtitle",
+          "value": "Find answers across various categories with top articles to guide you through"
+        },
+        {
+          "identifier": "show_category2_subtitle",
+          "type": "checkbox",
+          "description": "Show categories section layout 2 subtitle",
+          "label": "Toggle Layout 2 Subtitle",
           "value": true
         }
       ]
