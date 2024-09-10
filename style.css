@@ -2403,16 +2403,15 @@ ul {
 @media (max-width: 767px){
   .faq .container{
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
   }
   .faq__head {
     align-items: center;
     align-self: center;
     max-width: 570px;
   }
-  .faq__head p {
+  .faq__head {
     text-align: center;
-    margin-bottom: 35px;
   }
   .faq__item {
     padding: 20px 30px;
@@ -3102,9 +3101,6 @@ ul {
     width: 100%;
     padding-left: 0;
     border-left: none;
-  }
-  .section-page__articles {
-    gap: 20px;
   }
   .section-page__article {
     padding: 25px 20px;
