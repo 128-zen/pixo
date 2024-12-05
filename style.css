@@ -2358,6 +2358,10 @@ ul {
   .videos__item{
     width: 100%;
   }
+  .videos__head {
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 /* FAQ */
