@@ -1,7 +1,7 @@
 {
   "name": "Pixo 128",
   "author": "128zen",
-  "version": "1.0.45",
+  "version": "1.0.46",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -401,6 +401,34 @@
           "description": "Show hero subtitle",
           "label": "Toggle Subtitle Component",
           "value": true
+        },
+        {
+          "identifier": "show_hero_card",
+          "type": "checkbox",
+          "description": "Show hero card",
+          "label": "Toggle Card Component",
+          "value": true
+        },
+        {
+          "identifier": "hero_card_top_link",
+          "type": "text",
+          "description": "Insert link",
+          "label": "Card Link",
+          "value": "#"
+        },
+        {
+          "identifier": "hero_card_heading",
+          "type": "text",
+          "description": "Enter card title",
+          "label": "Hero Card Title",
+          "value": "Contact Support"
+        },
+        {
+          "identifier": "hero_card_subtitle",
+          "type": "text",
+          "description": "Enter card subtitle",
+          "label": "Hero Card Subtitle",
+          "value": "Learn about our powerful theming framework, designed to create beautiful and unique."
         }
       ]
     },

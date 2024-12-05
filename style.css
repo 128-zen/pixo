@@ -1412,6 +1412,8 @@ ul {
 .hero .container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 60px;
   padding-top: 188px;
 }
 
@@ -1428,19 +1430,66 @@ ul {
   max-width: 645px;
 }
 
+.hero__card {
+  position: relative;
+  z-index: 9;
+  max-width: 370px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: $background_tertiary_color;
+  box-shadow: 6px 6px 0px 0px #000;
+}
+
+.hero__card h6 {
+  margin-bottom: 15px;
+}
+
+.hero__card > div {
+  display: flex;
+  gap: 30px;
+  align-items: end;
+}
+
+.hero__card > div a {
+  padding: 8px;
+  border-radius: 50px;
+  font-size: 0;
+  background-color: $primary_button_color;
+  box-shadow: 1.2px 2.4px 0px 0px #000;
+}
+
+.hero__card > div a:hover svg {
+  transform: rotate(90deg);
+}
+
+.hero__card > div a svg {
+  width: 16px;
+  height: 16px;
+}
+
 @media (max-width: 1279px) {
   .hero-text {
     font-size: 50px;
   }
+  .hero .container {
+    padding-top: 150px;
+  }
 }
 @media (max-width: 1023px) {
   .hero .container {
-    padding-top: 168px;
+    padding-top: 130px;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .hero__content {
+    align-items: center;
+    text-align: center;
   }
 }
 @media (max-width: 767px) {
   .hero .container {
-    padding-top: 148px;
+    padding-top: 110px;
   }
   .hero__content {
     max-width: 595px;
@@ -1922,6 +1971,10 @@ ul {
   gap: 30px;
 }
 
+.categories__head > div, .videos__head > div {
+  flex: 0 0 auto;
+}
+
 .categories__sections, .categories__list {
   margin-top: 60px;
   display: flex;
@@ -2021,9 +2074,11 @@ ul {
   .categories {
     padding-top: 60px;
   }
-  .categories__head {
-    flex-direction: column;
-    gap: 20px;
+  .categories__head, .videos__head {
+    justify-content: center;
+  }
+  .categories__head > div, .videos__head > div {
+    display: none;
   }
   .categories__sections, .categories__list {
     gap: 40px;
@@ -2282,10 +2337,6 @@ ul {
     padding-top: 80px;
     padding-bottom: 290px;
   }
-  .videos__head {
-    flex-direction: column;
-    gap: 20px;
-  }
   .videos__list {
     margin-top: 40px;
   }
@@ -2366,6 +2417,7 @@ ul {
   width: 30px;
   height: 30px;
   border-radius: 50px;
+  flex: 0 0 auto;
   box-shadow: 1.2px 2.4px 0px 0px #000;
   background-color: $primary_button_color;
 }
@@ -6886,6 +6938,18 @@ html[dir=rtl] .notification-left-aligned {
 @media (max-width: 767px) {
   .last-section {
     padding-bottom: 300px;
+  }
+}
+
+.mobile-button {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mobile-button {
+    display: flex;
+    padding-top: 40px;
+    justify-content: center;
   }
 }
 

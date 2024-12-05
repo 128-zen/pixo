@@ -19,6 +19,19 @@
         </div>
       {{/if}}
     </div>
+    {{#if settings.show_hero_card}}
+      <div class="hero__card">
+        <h6><a href="{{settings.hero_card_top_link}}">{{settings.hero_card_heading}}</a></h6>
+        <div>
+          <p>{{settings.hero_card_subtitle}}</p>
+          <a href="{{settings.hero_card_top_link}}">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
+              <path d="M1.29999 5H10.3M10.3 5L6.36249 1M10.3 5L6.36249 9" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    {{/if}}
   </div>
   <div class="background"></div>
 </section>
@@ -97,7 +110,9 @@
   <div class="container">
     <div class="videos__head">
       <h2 class="fade-in-up">{{settings.videos_heading}}</h2>
-      <a class="button button-primary" href="{{settings.videos_button_link}}" target="_blank">{{settings.videos_button}}</a>
+      <div class="fade-in-up">
+        <a class="button button-primary" href="{{settings.videos_button_link}}" target="_blank">{{settings.videos_button}}</a>
+      </div>
     </div>
     <div class="videos__list">
       <div class="videos__item fade-in-up">
@@ -133,6 +148,9 @@
         <h4>{{settings.videos_heading3}}</h4>
         <p>{{settings.videos_description3}}</p>
       </div>
+    </div>
+    <div class="mobile-button fade-in-up">
+      <a class="button button-primary" href="{{settings.videos_button_link}}" target="_blank">{{settings.videos_button}}</a>
     </div>
   </div>
 
@@ -289,6 +307,9 @@
               </div>
             </div>
           {{/each}}
+        </div>
+        <div class="mobile-button fade-in-up">
+          <a class="button button-primary" href="{{url}}">{{t 'see_all_sections'}}</a>
         </div>
       </div>
     {{/each}}
