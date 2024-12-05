@@ -192,6 +192,13 @@
     }
   }
 
+  if (document.querySelector('.hero')) {
+    const sections = document.querySelectorAll('section');
+    if (sections.length > 0) {
+        sections[1].classList.add('first-section');
+    }
+  }
+
   //switching FAQ items
   const descriptionItems = document.querySelectorAll('.faq__item');
   if(descriptionItems){
