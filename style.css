@@ -312,7 +312,7 @@ p {
     font-size: 44px;
   }
   h2 {
-    font-size: 34px;
+    font-size: 40px;
   }
   h3 {
     font-size: 30px;
@@ -1468,6 +1468,10 @@ ul {
   height: 16px;
 }
 
+.hero__card > div a svg path {
+  stroke: $text_primary;
+}
+
 @media (max-width: 1279px) {
   .hero-text {
     font-size: 50px;
@@ -2512,6 +2516,7 @@ ul {
 @media(max-width: 1279px) {
   .submit-request-page, .new-post-page {
     padding-bottom: 340px;
+    padding-top: 50px;
   }
 }
 
@@ -2523,7 +2528,7 @@ ul {
 
 @media(max-width: 767px) {
   .submit-request-page, .new-post-page {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 300px;
   }
   .submit-request-page .container, .new-post-page .container {
@@ -2932,6 +2937,9 @@ ul {
   .category-page__article {
     width: 100%;
   }
+  .category-page__section-heading a {
+    display: none;
+  }
 }
 
 
@@ -3104,6 +3112,7 @@ ul {
 @media (max-width: 1279px) {
   .section-page {
     padding-bottom: 340px;
+    padding-top: 50px;
   }
 }
 
@@ -3130,7 +3139,7 @@ ul {
 
 @media (max-width: 767px) {
   .section-page {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 300px;
   }
   .section-page>.container {
@@ -3637,6 +3646,12 @@ ul {
   color: $hover_link_color;
 }
 
+@media (max-width: 1279px) {
+  .article-page {
+    padding-top: 50px;
+  }
+}
+
 @media (max-width: 1023px) {
   .article-page {
     padding-bottom: 320px;
@@ -3649,7 +3664,7 @@ ul {
 
 @media (max-width: 767px) {
   .article-page {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 300px;
   }
   .article-page h1, .post-title h1 {
@@ -4279,7 +4294,7 @@ ul {
     padding-bottom: 340px;
   }
   .topics {
-    padding-top: 100px;
+    padding-top: 70px;
   }
 }
 
@@ -4288,7 +4303,7 @@ ul {
     padding-bottom: 320px;
   }
   .topics {
-    padding-top: 80px;
+    padding-top: 50px;
   }
 }
 
@@ -4297,7 +4312,7 @@ ul {
     padding-bottom: 300px;
   }
   .topics {
-    padding-top: 60px;
+    padding-top: 40px;
   }
 }
 
@@ -4447,16 +4462,17 @@ ul {
 
 @media (max-width: 1279px) {
   .post-list-page .posts {
-    padding-top: 100px;
+    padding-top: 70px;
   }
   .topic-page {
+    padding-top: 50px;
     padding-bottom: 340px;
   }
 }
 
 @media (max-width: 1023px) {
   .post-list-page .posts {
-    padding-top: 80px;
+    padding-top: 50px;
   }
   .posts-item {
     width: calc(50% - 15px);
@@ -4467,11 +4483,11 @@ ul {
 }
 @media (max-width: 767px) {
   .topic-page {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 300px;
   }
   .post-list-page .posts {
-    padding-top: 60px;
+    padding-top: 40px;
   }
   .topic-header {
     flex-direction: column;
@@ -6528,6 +6544,7 @@ ul {
 @media (max-width: 1279px) {
   .search-results-page .container {
     padding-bottom: 340px;
+    padding-top: 50px;
   }
 }
 @media (max-width: 1023px) {
@@ -6548,7 +6565,7 @@ ul {
 }
 @media (max-width: 767px) {
   .search-results-page .container {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 300px;
   }
   .search-results-sidebar {
