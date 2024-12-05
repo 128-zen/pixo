@@ -192,7 +192,7 @@
     }
   }
 
-  if (document.querySelector('.hero')) {
+  if (document.querySelector('.hero') && !document.querySelector('.category-page')) {
     const sections = document.querySelectorAll('section');
     if (sections.length > 0) {
         sections[1].classList.add('first-section');
