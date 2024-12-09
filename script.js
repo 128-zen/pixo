@@ -199,6 +199,26 @@
     }
   }
 
+  if(document.querySelector('.faq') && !document.querySelector('.introduction')) {
+    document.querySelector('.faq').classList.add('padding-top')
+  }
+
+  if(document.querySelector('.videos') && !document.querySelector('.faq') && !document.querySelector('.introduction')) {
+    document.querySelector('.videos').classList.remove('section')
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+  
+    sections.forEach((section, index) => {
+      if (section.classList.contains("introduction") && !section.classList.contains("first-section")) {
+        if (index > 0) {
+          sections[index - 1].classList.add("before-introduction");
+        }
+      }
+    });
+  });
+
   //switching FAQ items
   const descriptionItems = document.querySelectorAll('.faq__item');
   if(descriptionItems){

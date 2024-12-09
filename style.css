@@ -731,6 +731,7 @@ ul {
 }
 .logo span {
   margin: 0 10px;
+  flex: 0 0 auto;
   color: $text_primary;
 }
 
@@ -2219,7 +2220,6 @@ ul {
 
 .videos {
   padding-top: 120px;
-  padding-bottom: 330px;
   position: relative;
   text-align: center;
 }
@@ -2333,14 +2333,12 @@ ul {
 @media (max-width: 1279px){
   .videos {
     padding-top: 100px;
-    padding-bottom: 310px;
   }
 }
 
 @media (max-width: 1023px) {
   .videos {
     padding-top: 80px;
-    padding-bottom: 290px;
   }
   .videos__list {
     margin-top: 40px;
@@ -2353,7 +2351,6 @@ ul {
 @media (max-width: 767px){
   .videos {
     padding-top: 60px;
-    padding-bottom: 270px;
   }
   .videos__item{
     width: 100%;
@@ -6979,6 +6976,44 @@ html[dir=rtl] .notification-left-aligned {
 @media (max-width: 767px) {
   .first-section {
     padding-top: 60px;
+  }
+}
+
+.padding-top {
+  padding-top: 120px;
+}
+@media (max-width: 1279px) {
+  .padding-top {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 1023px) {
+  .padding-top {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .padding-top {
+    padding-top: 60px;
+  }
+}
+
+.before-introduction {
+  padding-bottom: 330px;
+}
+@media (max-width: 1279px) {
+  .before-introduction {
+    padding-bottom: 310px;
+  }
+}
+@media (max-width: 1023px) {
+  .before-introduction {
+    padding-bottom: 290px;
+  }
+}
+@media (max-width: 767px) {
+  .before-introduction {
+    padding-bottom: 270px;
   }
 }
 

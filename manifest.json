@@ -1,7 +1,7 @@
 {
   "name": "Pixo 128",
   "author": "128zen",
-  "version": "1.0.50",
+  "version": "1.0.51",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -398,14 +398,14 @@
         {
           "identifier": "show_hero_text",
           "type": "checkbox",
-          "description": "Show hero subtitle",
+          "description": "Show the hero subtitle",
           "label": "Toggle Subtitle Component",
           "value": true
         },
         {
           "identifier": "show_hero_card",
           "type": "checkbox",
-          "description": "Show hero card",
+          "description": "Show the hero card",
           "label": "Toggle Card Component",
           "value": true
         },
@@ -419,15 +419,15 @@
         {
           "identifier": "hero_card_heading",
           "type": "text",
-          "description": "Enter card title",
-          "label": "Hero Card Title",
+          "description": "Enter the card title",
+          "label": "Card Title",
           "value": "Contact Support"
         },
         {
           "identifier": "hero_card_subtitle",
           "type": "text",
-          "description": "Enter card subtitle",
-          "label": "Hero Card Subtitle",
+          "description": "Enter the card subtitle",
+          "label": "Card Subtitle",
           "value": "Learn about our powerful theming framework, designed to create beautiful and unique."
         }
       ]
@@ -474,10 +474,24 @@
           "label": "Item 4 Image"
         },
         {
+          "identifier": "show_partners_item5",
+          "type": "checkbox",
+          "description": "Show partners item 5",
+          "label": "Toggle Partners Item 5",
+          "value": true
+        },
+        {
           "identifier": "partners_item5_img",
           "type": "file",
           "description": "Insert image",
           "label": "Item 5 Image"
+        },
+        {
+          "identifier": "show_partners_item6",
+          "type": "checkbox",
+          "description": "Show partners item 6",
+          "label": "Toggle Partners Item 6",
+          "value": true
         },
         {
           "identifier": "partners_item6_img",
