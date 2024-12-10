@@ -1856,11 +1856,16 @@ ul {
 
 /* Introduction */
 .introduction {
-  background-color: $background_secondary_color;
+  position: relative;
+  z-index: 3;
 }
 
 .introduction .container {
-  margin-top: -210px;
+  margin-bottom: -300px;
+}
+
+.introduction.last-section .container {
+  margin-bottom: 0;
 }
 
 .introduction h2 {
@@ -1924,8 +1929,17 @@ ul {
   transform: rotate(45deg);
 }
 
+@media (max-width: 1279px) {
+  .introduction .container {
+    margin-bottom: -280px;
+  }
+}
+
 
 @media (max-width: 1023px) {
+  .introduction .container {
+    margin-bottom: -260px;
+  }
   .introduction__items {
     margin-top: 40px;
   }
@@ -1934,6 +1948,9 @@ ul {
   }
 }
 @media (max-width: 767px) {
+  .introduction .container {
+    margin-bottom: -240px;
+  }
   .introduction__items {
     gap: 20px;
   }
@@ -6998,22 +7015,22 @@ html[dir=rtl] .notification-left-aligned {
   }
 }
 
-.before-introduction {
-  padding-bottom: 330px;
+.after-introduction {
+  padding-top: 300px;
 }
 @media (max-width: 1279px) {
-  .before-introduction {
-    padding-bottom: 310px;
+  .after-introduction {
+    padding-top: 280px;
   }
 }
 @media (max-width: 1023px) {
-  .before-introduction {
-    padding-bottom: 290px;
+  .after-introduction {
+    padding-top: 260px;
   }
 }
 @media (max-width: 767px) {
-  .before-introduction {
-    padding-bottom: 270px;
+  .after-introduction {
+    padding-top: 240px;
   }
 }
 

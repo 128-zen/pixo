@@ -207,13 +207,17 @@
     document.querySelector('.videos').classList.remove('section')
   }
 
+  if(!document.querySelector('.videos') && document.querySelector('.introduction')) {
+    document.querySelector('.introduction').classList.add('padding-top')
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll(".section");
   
     sections.forEach((section, index) => {
-      if (section.classList.contains("introduction") && !section.classList.contains("first-section")) {
+      if (section.classList.contains("introduction") && !section.classList.contains("last-section")) {
         if (index > 0) {
-          sections[index - 1].classList.add("before-introduction");
+          sections[index + 1].classList.add("after-introduction");
         }
       }
     });
